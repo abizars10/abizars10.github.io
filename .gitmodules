@@ -1,3 +1,18 @@
 [submodule "Animated_Login_Page"]
 	path = Animated_Login_Page
 	url = https://github.com/abizars10/Animated_Login_Page.git
+[submodule "todoList"]
+	path = todoList
+	url = https://github.com/abizars10/todoList.git
+[submodule "movieDB"]
+	path = movieDB
+	url = https://github.com/abizars10/movieDB.git
+[submodule "website-kopi-kenangan-senja"]
+	path = website-kopi-kenangan-senja
+	url = https://github.com/abizars10/website-kopi-kenangan-senja.git
+[submodule "Web-Landing"]
+	path = Web-Landing
+	url = https://github.com/abizars10/Web-Landing.git
+[submodule "Abizars-Company"]
+	path = Abizars-Company
+	url = https://github.com/abizars10/Abizars-Company.git
