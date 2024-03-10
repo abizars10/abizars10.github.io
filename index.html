@@ -1,265 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Portfolio | Abizar Arrifa'i</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abizar Portfolio</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- css style -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body id="home">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Abizar Arrifa'i</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="bx bx-moon" id="darkMode-icon"></div>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hallo, introduce me</h3>
+        <h1>Abizar Arrifa'i</h1>
+        <p>and i'm a <span class="text"></span></p>
+
+        <div class="social-media">
+          <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><i class="bx bxl-facebook"></i></a>
+          <a href="https://twitter.com/?lang=en-id" target="_blank"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.instagram.com/abizars10/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="https://www.linkedin.com/in/abizar-arrifa-i-7124b1271/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+        <a href="https://drive.google.com/file/d/1tRIkpOKnMpOGKsNuhidMXYceVUl4Oky7/view?usp=drive_link" target="_blank" class="btn">Download CV</a>
+      </div>
+
+      <div class="home-img">
+        <img src="img/home.png" />
+      </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="img/about.png" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Hi, I'm Fullstack Developer</h3>
+        <p>
+          I'm graduated with a Bachelor of Information Engineering from Pelita Bangsa University, Cikarang. As a programmer, I have basic knowledge of programming languages that focus on developing websites to be more interactive and
+          responsive using Javascript and PHP languages along with their libraries and frameworks.
+        </p>
+        <div class="code">
+          <i class="bx bxl-visual-studio"></i>
+          <i class="bx bxl-html5"></i>
+          <i class="bx bxl-css3"></i>
+          <i class="bx bxl-sass"></i>
+          <i class="bx bxl-bootstrap"></i>
+          <i class="bx bxl-tailwind-css"></i>
+          <i class="bx bxl-javascript"></i>
+          <i class="bx bxl-php"></i>
+          <i class="bx bxl-react"></i>
+          <i class="bx bxl-vuejs"></i>
+          <i class="bx bxl-git"></i>
+          <i class="bx bxl-nodejs"></i>
+          <i class="bx bxl-postgresql"></i>
         </div>
       </div>
-    </nav>
-    <!-- Akhir Navbar -->
-
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="img/abizar.png" alt="abizar" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4"></h1>
-      <p class="lead"></p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,160L48,133.3C96,107,192,53,288,74.7C384,96,480,192,576,197.3C672,203,768,117,864,101.3C960,85,1056,139,1152,149.3C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-    <!-- Akhir Jumbotron -->
 
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-        <!-- Content here -->
-        <div class="row text-center mb-3">
-          <div class="col" data-aos="fade-down">
-            <h2>About Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4" data-aos="fade-right">
-            <p class="pKiri">Hallo. Saya merupakan lulusan S1 Teknik Informatika dari Universitas Pelita Bangsa Cikarang.</p>
-          </div>
-          <div class="col-md-4" data-aos="fade-left">
-            <p class="pKanan">Saya seorang programmer yang berfokus pada pengembangan website menggunakan javascript dan typescript beserta library dan frameworknya.</p>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#02c6c67f"
-          fill-opacity="1"
-          d="M0,224L48,186.7C96,149,192,75,288,85.3C384,96,480,192,576,197.3C672,203,768,117,864,112C960,107,1056,181,1152,197.3C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir About -->
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Project</span></h2>
 
-    <!-- Project -->
-    <section id="projects">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col" data-aos="zoom-in">
-            <h2>My Projects</h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="img/Todo List.png" />
+
+          <div class="portfolio-layer">
+            <h4>Todo List</h4>
+            <a href="portfolio/todoList/index.html" target="_blank"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-duration="1500">
-              <img src="img/projects/Company Profile.png" class="card-img-top" alt="Projects 1" />
-              <div class="card-body text-center">
-                <p class="card-text">
-                  Website Company Profile. <br />
-                  <i class="bi bi-github"> <a href="https://github.com/abizars10/Abizars-Company.git" target="_blank">Source Code</a></i>
-                </p>
-              </div>
-            </div>
+        <div class="portfolio-box">
+          <img src="img/Company Profile.png" />
+
+          <div class="portfolio-layer">
+            <h4>Company Profile</h4>
+            <a href="portfolio/Abizars-Company/index.html" target="_blank"><i class="bx bx-link-external"></i></a>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="100">
-              <img src="img/projects/Landing Page.png" class="card-img-top" alt="Projects 2" />
-              <div class="card-body text-center">
-                <p class="card-text">
-                  Website Landing Page. <br />
-                  <i class="bi bi-github"> <a href="https://github.com/abizars10/Web-Landing.git" target="_blank">Source Code</a></i>
-                </p>
-              </div>
-            </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="img/Animasi Login.png" />
+
+          <div class="portfolio-layer">
+            <h4>Animated Login Page</h4>
+            <a href="portfolio/Animated_Login_Page/index.html" target="_blank"><i class="bx bx-link-external"></i></a>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="200">
-              <img src="img/projects/Undangan Digital.png" class="card-img-top" alt="Projects 3" />
-              <div class="card-body text-center">
-                <p class="card-text">
-                  Website Undangan Pernikahan Digital. <br />
-                  <i class="bi bi-github"> <a href="https://github.com/abizars10/web-undangan-digital.git" target="_blank">Source Code</a></i>
-                </p>
-              </div>
-            </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="img/DB Movies.png" />
+
+          <div class="portfolio-layer">
+            <h4>DB Movies</h4>
+            <a href="portfolio/movieDB/index.html" target="_blank"><i class="bx bx-link-external"></i></a>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="300">
-              <img src="img/projects/Web Kopi.png" class="card-img-top" alt="Projects 4" />
-              <div class="card-body text-center">
-                <p class="card-text">
-                  Website Coffee shop. <br />
-                  <i class="bi bi-github"> <a href="https://github.com/abizars10/website-kopi-kenangan-senja.git" target="_blank">Source Code</a></i>
-                </p>
-              </div>
-            </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="img/Landing Page.png" />
+
+          <div class="portfolio-layer">
+            <h4>Landing Page</h4>
+            <a href="portfolio/Web-Landing/index.html" target="_blank"><i class="bx bx-link-external"></i></a>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="400">
-              <img src="img/projects/Kalkulator Sederhana.png" class="card-img-top" alt="Projects 5" />
-              <div class="card-body text-center">
-                <p class="card-text">
-                  Program Kalkulator Sederhana javascript. <br />
-                  <i class="bi bi-github"> <a href="https://github.com/abizars10/kalkulator-dom.git" target="_blank">Source Code</a></i>
-                </p>
-              </div>
-            </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="img/Web Kopi.png" />
+
+          <div class="portfolio-layer">
+            <h4>Coffee Kenangan Senja</h4>
+            <a href="portfolio/website-kopi-kenangan-senja/index.html" target="_blank"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,128L48,106.7C96,85,192,43,288,48C384,53,480,107,576,117.3C672,128,768,96,864,101.3C960,107,1056,149,1152,165.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-    <!-- Akhir Project -->
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container" data-aos="zoom-in">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
-              <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <!-- certificate -->
+    <div class="certi-container">
+      <h2 class="heading"><span>My </span>Certificate</h2>
+
+      <div class="certi-wrapper">
+        <div class="certi-box mySwiper">
+          <div class="certi-content swiper-wrapper">
+            <div class="certi-slide swiper-slide">
+              <img src="img/Sertifikat Sololearn Introduction to Javascript.jpg"" />
+              <div class="certi-layer">
+                <i class="bx bx-link"></i>
+                <a href="https://drive.google.com/file/d/1DkrN0JQiDpYq3iVW2Dk12siHsB795Edv/view?usp=drive_link" target="_blank">
+                  <h4>Certificate</h4>
+                </a>
+              </div>
             </div>
-            <form name="abizar-contact-form">
-              <div class="mb-3">
-                <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+            <div class="certi-slide swiper-slide">
+              <img src="img/Sertifikat Sololearn Javascript Intermediate.jpg"" />
+              <div class="certi-layer">
+                <i class="bx bx-link"></i>
+                <a href="https://drive.google.com/file/d/1unbdsni9592ezeh1gr9l0L6y2shxLSp3/view?usp=drive_link" target="_blank">
+                  <h4>Certificate</h4>
+                </a>
               </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+            </div>
+            <div class="certi-slide swiper-slide">
+              <img src="img/sertifikat_course_Belajar Membuat Front-end Web Pemula.jpg"" />
+              <div class="certi-layer">
+                <i class="bx bx-link"></i>
+                <a href="https://drive.google.com/file/d/1uT4aVN2zfZIHMaEIpnZ1GLqOUK1UCe0k/view?usp=drive_link" target="_blank">
+                  <h4>Certificate</h4>
+                </a>
               </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan </label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+            </div>
+            <div class="certi-slide swiper-slide">
+              <img src="img/sertifikat_course_Belajar Fundamental Front-End Web Development.jpg"" />
+              <div class="certi-layer">
+                <i class="bx bx-link"></i>
+                <a href="https://drive.google.com/file/d/14p9XHbrcPv6Da3lqcq4ZrRX21VfcWHQd/view?usp=drive_link" target="_blank">
+                  <h4>Certificate</h4>
+                </a>
               </div>
-              <button type="submit" class="btn btn-kirim" style="background-color: #02c6c6">Kirim</button>
-              <button class="btn btn-loading d-none" style="background-color: #02c6c6" type="button" disabled>
-                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
-                <span role="status">Loading...</span>
-              </button>
-            </form>
+            </div>
+            <div class="certi-slide swiper-slide">
+              <img src="img/sertifikat_course_Software Developer.jpg"" />
+              <div class="certi-layer">
+                <i class="bx bx-link"></i>
+                <a href="https://drive.google.com/file/d/1U1LKOikuI4KQnVKPIjlMCs8v6ns_-3ya/view?usp=drive_link" target="_blank">
+                  <h4>Certificate</h4>
+                </a>
+              </div>
+            </div>
+            <div class="certi-slide swiper-slide">
+              <img src="img/Sertifikat belajar PHP always ngoding.jpg"" />
+              <div class="certi-layer">
+                <i class="bx bx-link"></i>
+                <a href="https://drive.google.com/file/d/1G2fojTssdcKM8cM-7j-x4gonyhwhnEZh/view?usp=drive_link" target="_blank">
+                  <h4>Certificate</h4>
+                </a>
+              </div>
+            </div>
+            <div class="certi-slide swiper-slide">
+              <img src="img/Certificate-of-Completion-Introduction-to-Information-Security.jpg"" />
+              <div class="certi-layer">
+                <i class="bx bx-link"></i>
+                <a href="https://drive.google.com/file/d/1fiPH0QZXyJv2td9rM6B8fOZBinCgZ8h8/view?usp=drive_link" target="_blank">
+                  <h4>Certificate</h4>
+                </a>
+              </div>
+            </div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#02c6c6"
-          fill-opacity="1"
-          d="M0,256L60,240C120,224,240,192,360,197.3C480,203,600,245,720,272C840,299,960,309,1080,293.3C1200,277,1320,235,1380,213.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Contact -->
+    </div>
 
-    <!-- Footer -->
-    <footer class="text-center pb-5">
-      <p>Created with <i class="bi bi-emoji-heart-eyes"></i> by <a href="https://www.instagram.com/abizars10/" class="text-black fw-bold">Abizar Arrifa'i</a></p>
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form action="#" name="abizar-contact-form">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" name="nama" />
+          <input type="email" placeholder="Email Address" name="email" />
+        </div>
+        <textarea name="pesan" cols="30" rows="8" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Abizar Arrifa'i | All Rights Reserved</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
     </footer>
-    <!-- Akhir Footer -->
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-    <!-- Library AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        once: true,
-        duration: 2000,
-      });
-    </script>
-
-    <!-- Library Gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
-    <script>
-      gsap.registerPlugin(TextPlugin);
-      gsap.to(".display-4", { duration: 1.2, delay: 1, text: "Abizar Arrifa'i" });
-      gsap.to(".lead", { duration: 1.2, delay: 2, text: "Frontend Developer | Junior Programmer" });
-      gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0, ease: "bounce", delay: 0.5 });
-      gsap.from(".navbar", { duration: 1.5, y: "-100", opacity: 0 });
-    </script>
-
-    <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbxowL8b1B7ZuydWR-xBt4G46dtD0zHUfu5VXKVD6hStjH_AnNDeieyW1krVfwrQN6W8Fg/exec";
-      const form = document.forms["abizar-contact-form"];
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const alert = document.querySelector(".alert");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        // Ketika tombol submit diklik
-        // tampilkan tombol loading, hilangkan tombol kirim
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            // tampilkan tombol kirim, hilangkan tombol loading
-            btnLoading.classList.toggle("d-none");
-            btnKirim.classList.toggle("d-none");
-            // tampilkan alert
-            alert.classList.toggle("d-none");
-            // reset form
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Javascript -->
+    <script src="script.js"></script>
   </body>
 </html>
